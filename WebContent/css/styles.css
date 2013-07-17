@@ -1,0 +1,44 @@
+a.plain:link
+{ color: #333; text-decoration: none }
+a.plain:active
+{ color: #333; text-decoration: none }
+a.plain:visited
+{ color: #333; text-decoration: none }
+a.plain:hover
+{ color: #333; text-decoration: none }
+
+.status-bar {
+    height: 60px;
+}
+
+.about-icon {
+    float: left;
+    margin-right: 12px;
+}
+
+h5 {
+	margin: 0;
+	font-family: inherit;
+	font-weight: bold;
+	color: inherit;
+	text-rendering: optimizelegibility;
+	line-height: 18px;
+	font-size: 12px;
+}
+
+p {
+	margin: 0 0 9px;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 13px;
+	line-height: 18px;	
+}
+
+.navbar-link {
+  color: white;
+}
+
+div.ui-datepicker {
+	font-family: "Trebuchet MS", Helvetica, Arial, Verdana, sans-serif;
+	font-size: 80.0%;
+}
+

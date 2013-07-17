@@ -1,0 +1,69 @@
+<div class="row">
+	<form class="form-horizontal span12">
+		<fieldset>
+			<legend>Produtos</legend>
+			<br />
+
+			<div class="row">
+				<div class="span9">
+					<div class="control-group">
+						<label for="productId" class="control-label">Id:</label>
+						<div class="controls">
+							<input id="productId" name="id" type="text"
+								value="<%= id === null ? '' : id %>" class="span1" disabled />
+						</div>
+					</div>
+					<div class="control-group">
+						<label for="category" class="control-label">Categoria:</label>
+						<div class="controls">
+							<input type="text" id="category" name="category_id" value="<%= category_id %>" />
+							<span class="help-inline"></span>
+						</div>
+					</div>					
+					<div class="control-group">
+						<label for="name" class="control-label">Produto:</label>
+						<div class="controls">
+							<input type="text" id="name" name="name" value="<%= name %>" />
+							<span class="help-inline"></span>
+						</div>
+					</div>
+					<div class="control-group">
+						<label for="price" class="control-label">Preço:</label>
+						<div class="controls">
+							<input type="text" id="price" name="price"
+								value="<%= price %>" /> <span class="help-inline"></span>
+						</div>
+					</div>
+					<div class="control-group">
+						<label for="description" class="control-label">Descrição:</label>
+						<div class="controls">
+							<textarea id="description" name="description" class="span6"
+								rows="6"><%= description %></textarea>
+						</div>
+					</div>
+				</div>
+				<div class="span3">
+					<div class="well">
+						<p>
+							<img id="picture" width="180"
+								src="<%= picture === null ? 'pics/generic.jpg' : 'pics/' + picture %>" />
+						</p>
+						<p>Para alterar a imagem, arraste a nova para dentro da caixa.</p>
+					</div>
+				</div>
+			</div>
+		</fieldset>
+		<div class="form-actions">
+			<a href="#" class="btn btn-primary save">Salvar</a> <a href="#"class="btn delete">Excluir</a>
+		</div>
+	</form>
+</div>
+
+<div class="row status-bar">
+	<div class="span12">
+		<div class="alert alert-success" style="display: none">
+			<b>Sucesso !</b> Produto salvo com sucesso.
+		</div>
+	</div>
+</div>
+
